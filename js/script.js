@@ -350,19 +350,21 @@ function checkWinner() {
 }
 
 function checkRecord() {
+    let foundRec = false;
     for (let i = 0; i < records.length; i++) {
         if (records[i].size == size && records[i].mines == mines) {
+            foundRec = true;
             if (records[i].min < minutes) {
-                continue;
+                break;
             }
             if (records[i].sec < seconds) {
-                continue;
+                break;
             }
             if (records[i].ms < ms) {
-                continue;
+                break;
             }
-
-            records[i].min = miutes;
+            
+            records[i].min = minutes;
             records[i].sec = seconds;
             records[i].ms = ms;
 
@@ -373,5 +375,20 @@ function checkRecord() {
             ${records[i].sec < 10 ? '0' + records[i].sec : records[i].sec}.
             ${records[i].ms < 10 ? '0' + records[i].ms : records[i].ms}`;
         }
+    }
+
+    if (!foundRec) {
+        records.length = records.length + 1;
+        records[records.length - 1] = {
+            min: minutes,
+            sec: seconds,
+            ms: ms,
+            size: size,
+            mines: mines
+        };
+
+        document.getElementById("recArea").innerHTML +=
+        `<p id="rec${records.length - 1}">
+        ${size}x${size} (${mines}). ${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}.${ms < 10 ? '0' + ms : ms}</p>`;
     }
 }
