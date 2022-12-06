@@ -1,0 +1,170 @@
+
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    flex-direction: row;
+}
+
+.box {
+    background-color: rgb(195, 190, 190);
+    border-color: black;
+    color: black;
+    font-family: Play;
+    
+}
+
+.yellowBox {
+    background-color: rgb(255, 255, 103);
+}
+
+.greenBox {
+    background-color: rgb(0, 171, 40);
+}
+
+.redBox {
+    background-color: rgb(255, 23, 23);
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 200px;
+    
+}
+
+.in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form {
+    border-radius: 0px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    border-color: black;
+    width: 255px;
+    padding-left: 20px;
+
+    font-family: Play;
+}
+
+.button {
+    border-radius: 0px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    border-color: black;
+
+    font-family: Play;
+}
+
+.interface {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600px;
+    align-items: flex-end;
+}
+
+.timer {
+    font-family: Play; 
+    font-size: 20px;
+    border-color: black;
+}
+
+#timer {
+    font-size: 30px;
+}
+
+.mines {
+    font-family: Play; 
+    font-size: 20px;
+    border-color: black;
+}
+
+#mines {
+    font-size: 30px;
+}
+
+#result {
+    font-family: Play; 
+    font-size: 30px;
+    color: red;
+    width: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.harder {
+    font-family: Play; 
+    font-size: 20px;
+    border-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 3px;
+}
+
+#hard_box {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    border-color: black;
+    border-width: 2px;
+    border: solid;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+#recArea {
+    margin-top: 20px;
+    width: 250px;
+    height: 798px;
+    border-color: black;
+    border: solid;
+    background-color: white;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    font-family: Play; 
+    font-size: 20px;
+    color: black;
+
+    overflow-y: auto;
+}
+
+#hisArea {
+    margin-top: 20px;
+    width: 250px;
+    height: 798px;
+    border-color: black;
+    border: solid;
+    background-color: white;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+
+    font-family: Play; 
+    font-size: 20px;
+    color: black;
+
+    overflow-y: auto;
+}

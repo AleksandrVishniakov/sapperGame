@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300&family=Play&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="columns">
+        <div id="recArea">
+            Рекорды:
+        </div>
+
+        <div>
+            <form name="fieldSize" class="form1">
+                <div class="in">
+                    <input class="form" type="text" placeholder="Размер поля" name="size">
+                    <input class="form" type="text" placeholder="Количество мин" name="mine" id="form2">
+                </div>
+                <button class="button" onclick="return generate()">Генерировать</button>
+            </form>
+            <div class="interface">
+                <div class="timer">Время: <span id="timer">00:00.00</span></div>
+                <div class="harder">Сложность: <div id="hard_box"></div>
+                </div>
+                <div class="mines">Флажки: <span id="mines">10</span></div>
+            </div>
+            <div class="field" id="field"></div>
+            <div id="result"></div>
+        </div>
+
+        <div id="hisArea">
+            История:
+        </div>
+
+
+    </div>
+    <script src="js/script.js"> </script>
+</body>
+
+</html>
